@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Kariuki - Data Sourcing Specialist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Samuel Kariuki - Data Sourcing Specialist working with ESGF, CMIP6, CORDEX, Globus, rclone, DataLad, and HPC workflows.">
+  <meta name="author" content="Samuel Kariuki">
+
+  <!-- Animated Gradient Background -->
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(-45deg, #0f172a, #1e3a8a, #312e81, #0c4a6e);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    main {
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up { animation: fadeInUp 1s ease forwards; }
+
+    /* Hover Glow Effect */
+    .hover-glow:hover {
+      box-shadow: 0 0 20px rgba(59,130,246,0.7);
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="text-gray-100 font-sans relative">
+  <!-- Particle Background -->
+  <canvas id="bg"></canvas>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Samuel Kariuki</h1>
+      <p class="text-xl md:text-2xl text-blue-400 mb-6">
+        <span id="typing"></span>
+      </p>
+      <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-2xl shadow-lg transition">
+        Contact Me
+      </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-400 mb-6 text-center animate-fade-in-up">
+        About Me
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-100 animate-fade-in-up">
+        I am a <span class="text-blue-400 font-semibold">Data Sourcing Specialist</span> with expertise in 
+        <span class="text-blue-400 font-semibold">scientific and research-driven datasets</span>.  
+        My work spans global-scale archives such as 
+        <a href="https://esgf.llnl.gov/" target="_blank" class="underline text-blue-400 hover:text-blue-300">ESGF nodes</a>,  
+        <a href="https://earthdata.nasa.gov/" target="_blank" class="underline text-blue-400 hover:text-blue-300">satellite imagery repositories</a>,  
+        and <a href="https://esgf-node.llnl.gov/projects/cmip6/" target="_blank" class="underline text-blue-400 hover:text-blue-300">climate modeling outputs (CMIP6)</a>.  
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-gray-100 animate-fade-in-up">
+        I specialize in automated workflows to securely transfer and organize 
+        <span class="text-blue-400 font-semibold">petabyte-scale datasets</span> from distributed sources.  
+        Using tools like 
+        <a href="https://www.globus.org/" target="_blank" class="underline text-blue-400 hover:text-blue-300">Globus</a>,  
+        <a href="https://rclone.org/" target="_blank" class="underline text-blue-400 hover:text-blue-300">rclone</a>, and  
+        <a href="https://www.datalad.org/" target="_blank" class="underline text-blue-400 hover:text-blue-300">DataLad</a>,  
+        I streamline data pipelines while ensuring 
+        <span class="text-blue-400 font-semibold">integrity and reproducibility</span>.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-gray-100 animate-fade-in-up">
+        My accomplishments include:
+      </p>
+      <ul class="list-disc list-inside text-lg text-gray-100 space-y-2 mt-2 animate-fade-in-up">
+        <li>Sourced datasets from <a href="https://esgf.llnl.gov/" target="_blank" class="underline text-blue-400 hover:text-blue-300">20+ ESGF climate nodes</a>.</li>
+        <li>Automation scripts that reduced data transfer failures by <span class="text-blue-400">70%</span>.</li>
+        <li>Implemented multi-server redundancy for research pipelines.</li>
+        <li>Integrated datasets into <span class="text-blue-400">scientific workflows and HPC environments</span>.</li>
+        <li>Troubleshot servers, proxies, and auth to ensure dataset availability.</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-16 px-6 bg-gray-900/80 rounded-2xl mx-4">
+      <h2 class="text-3xl font-bold text-blue-400 mb-6 text-center">Skills & Tools</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
+        <a href="https://www.kernel.org/" target="_blank" class="bg-gray-800 p-6 rounded-2xl shadow hover-glow">Linux</a>
+        <a href="https://www.gnu.org/software/bash/" target="_blank" class="bg-gray-800 p-6 rounded-2xl shadow hover-glow">Shell Scripting</a>
+        <a href="https://www.globus.org/" target="_blank" class="bg-gray-800 p-6 rounded-2xl shadow hover-glow">Globus</a>
+        <a href="https://www.datalad.org/" target="_blank" class="bg-gray-800 p-6 rounded-2xl shadow hover-glow">DataLad</a>
+        <a href="https://rclone.org/" target="_blank" class="bg-gray-800 p-6 rounded-2xl shadow hover-glow">rclone</a>
+        <a href="https://www.python.org/" target="_blank" class="bg-gray-800 p-6 rounded-2xl shadow hover-glow">Python</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-400 mb-6">Contact</h2>
+      <p class="mb-6">Let’s collaborate on your next research data project.</p>
+      <form id="contactForm" class="grid gap-4">
+        <input type="text" id="name" placeholder="Your Name"
+               class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-blue-500" required />
+        <input type="email" id="email" placeholder="Your Email"
+               class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-blue-500" required />
+        <textarea id="message" placeholder="Your Message"
+                  class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-blue-500" required></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-lg shadow hover-glow">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-300">
+      © 2025 Samuel Kariuki — Data Sourcing Specialist
+    </footer>
+  </main>
+
+  <!-- Contact Form Script -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      try {
+        const res = await fetch("https://backend-vo1w.onrender.com/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message })
+        });
+        const data = await res.json();
+        if (data.status === "success") {
+          alert("Message sent successfully!");
+          document.getElementById("contactForm").reset();
+        } else {
+          alert("Error: " + data.message);
+        }
+      } catch (err) {
+        alert("Error connecting to server: " + err.message);
+      }
+    });
+  </script>
+
+  <!-- Typing Effect Script -->
+  <script>
+    const phrases = [
+      "Large-scale Data Sourcing",
+      "Linux & Shell Scripting",
+      "Scientific Workflows",
+      "Climate Data Automation"
+    ];
+
+    let i = 0, j = 0;
+    let currentPhrase = [];
+    let isDeleting = false;
+    let isEnd = false;
+
+    function loop() {
+      isEnd = false;
+      document.getElementById("typing").innerHTML = currentPhrase.join("");
+
+      if (i < phrases.length) {
+        if (!isDeleting && j <= phrases[i].length) {
+          currentPhrase.push(phrases[i][j]);
+          j++;
+        }
+
+        if (isDeleting && j <= phrases[i].length) {
+          currentPhrase.pop();
+          j--;
+        }
+
+        if (j === phrases[i].length) {
+          isEnd = true;
+          isDeleting = true;
+        }
+
+        if (isDeleting && j === 0) {
+          currentPhrase = [];
+          isDeleting = false;
+          i++;
+          if (i === phrases.length) {
+            i = 0;
+          }
+        }
+      }
+
+      const speedUp = Math.random() * (80 - 50) + 50;
+      const normalSpeed = Math.random() * (300 - 200) + 200;
+      const time = isEnd ? 2000 : isDeleting ? speedUp : normalSpeed;
+      setTimeout(loop, time);
+    }
+
+    loop();
+  </script>
+
+  <!-- Particle Script -->
+  <script>
+    const canvas = document.getElementById("bg");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    for (let i = 0; i < 100; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2,
+        dx: (Math.random() - 0.5) * 0.5,
+        dy: (Math.random() - 0.5) * 0.5
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(15,23,42,0.4)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(59,130,246,0.8)";
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+</html>
